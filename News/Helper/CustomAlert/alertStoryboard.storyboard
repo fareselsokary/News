@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Alert View Controller-->
+        <scene sceneID="wz1-60-Oir">
+            <objects>
+                <viewController storyboardIdentifier="customAlertViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overFullScreen" id="jW0-kB-IAl" customClass="customAlertViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jw7-ck-z6K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bw4-pl-paj">
+                                <rect key="frame" x="50" y="341" width="314" height="214.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYX-fI-AFR">
+                                        <rect key="frame" x="15" y="174.5" width="48" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelBtn:" destination="jW0-kB-IAl" eventType="touchUpInside" id="XQ5-jL-qLz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mya-DC-pnm">
+                                        <rect key="frame" x="15" y="25" width="284" height="139.5"/>
+                                        <string key="text">LabelLabe lLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelL abelLabelLabelLabelLabelLab elLabelLabelLabelLabelLabelLabelLabel</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mya-DC-pnm" firstAttribute="leading" secondItem="Bw4-pl-paj" secondAttribute="leading" constant="15" id="7Va-dg-Hh0"/>
+                                    <constraint firstAttribute="bottom" secondItem="dYX-fI-AFR" secondAttribute="bottom" constant="10" id="PG7-5K-a24"/>
+                                    <constraint firstItem="mya-DC-pnm" firstAttribute="top" secondItem="Bw4-pl-paj" secondAttribute="top" constant="25" id="VJo-gU-az0"/>
+                                    <constraint firstItem="mya-DC-pnm" firstAttribute="centerX" secondItem="Bw4-pl-paj" secondAttribute="centerX" id="gft-wm-cW5"/>
+                                    <constraint firstItem="dYX-fI-AFR" firstAttribute="top" secondItem="mya-DC-pnm" secondAttribute="bottom" constant="10" id="ixD-CX-JrU"/>
+                                    <constraint firstItem="mya-DC-pnm" firstAttribute="centerX" secondItem="Bw4-pl-paj" secondAttribute="centerX" id="t88-ox-wzE"/>
+                                    <constraint firstItem="mya-DC-pnm" firstAttribute="leading" secondItem="Bw4-pl-paj" secondAttribute="leading" constant="15" id="x3Z-as-c1X"/>
+                                    <constraint firstItem="dYX-fI-AFR" firstAttribute="leading" secondItem="Bw4-pl-paj" secondAttribute="leading" constant="15" id="yeG-bH-IlT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bw4-pl-paj" firstAttribute="leading" secondItem="z8L-uu-Myv" secondAttribute="leading" constant="50" id="LBt-jb-IjQ"/>
+                            <constraint firstItem="Bw4-pl-paj" firstAttribute="centerY" secondItem="jw7-ck-z6K" secondAttribute="centerY" id="OZO-6C-3xX"/>
+                            <constraint firstItem="Bw4-pl-paj" firstAttribute="centerX" secondItem="jw7-ck-z6K" secondAttribute="centerX" id="SEH-Nn-Fdg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z8L-uu-Myv"/>
+                    </view>
+                    <connections>
+                        <outlet property="dialogLbl" destination="mya-DC-pnm" id="9gh-8u-RKc"/>
+                        <outlet property="mainView" destination="Bw4-pl-paj" id="TvM-Md-m9P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTu-uC-pl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+</document>
