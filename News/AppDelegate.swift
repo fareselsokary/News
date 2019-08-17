@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        application.isNetworkActivityIndicatorVisible = true
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .red
         window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
@@ -23,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
             self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         }
-        // ReachabilityManager.shared.startMonitoring()
 
         return true
     }
